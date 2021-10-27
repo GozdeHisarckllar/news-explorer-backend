@@ -10,7 +10,7 @@ const userSchema = new Schema({
     minLength: 2,
     maxLength: 30,
     validate: {
-      validator: (v) => /[A-Z][a-z]{1,30}\b/.test(v),
+      validator: (v) => /[A-Z][a-z]{1,29}\b/.test(v),
       message: (props) => `${props.value} is an invalid username!`,
     },
   },
